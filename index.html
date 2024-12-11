@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exposé : La relation entre Sites Web, Navigateurs Web, et Moteurs de Recherche</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9; /* Fond gris clair */
+            color: #333333; /* Texte noir-gris */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #336699; /* Bleu vif */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #ff9966; /* Accent orange */
+            animation: headerFadeIn 2s ease-in-out;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            border-left: 5px solid #ff9966; /* Accent orange */
+            animation: sectionSlideIn 1s ease-out;
+        }
+        h1, h2, h3 {
+            color: #003366; /* Bleu marine */
+        }
+        a {
+            color: #ff6600; /* Orange vif */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #ff6600; /* Orange vif */
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #336699; /* Bleu vif */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 5px solid #ff9966; /* Accent orange */
+            animation: footerFadeIn 2s ease-in-out;
+        }
+        .animation {
+            width: 100%;
+            max-width: 560px;
+            margin: 20px auto;
+            display: block;
+            border: 2px solid #ff9966;
+            border-radius: 8px;
+            animation: pop 1.5s infinite alternate;
+        }
+        .image {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            display: block;
+            border: 2px solid #ff9966;
+            border-radius: 8px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #ffffff; /* Fond blanc */
+            border: 1px solid #cccccc; /* Bordure gris clair */
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #cccccc; /* Bordure gris clair */
+        }
+        table th {
+            background-color: #336699; /* Bleu vif */
+            color: white;
+        }
+        table td {
+            background-color: #f9f9f9; /* Gris clair */
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes headerFadeIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes footerFadeIn {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes sectionSlideIn {
+            from { transform: translateX(-100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes pop {
+            from { transform: scale(1); }
+            to { transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exposé : La relation et les différences entre Sites Web, Navigateurs Web, et Moteurs de Recherche</h1>
+        <p>Par : Amine Antribouzar</p>
+    </header>
+
+    <section>
+        <h2>Introduction</h2>
+        <p><span class="highlight">Comment ces outils fonctionnent ensemble pour rendre le web accessible ?</span></p>
+        <iframe class="animation" width="560" height="315" src="https://www.youtube.com/embed/bahj0zi16hg?si=hkujW--_Nq_90LaR" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        <p>Internet est devenu une partie essentielle de nos vies. Il permet d’accéder à une quantité massive d’informations, mais comment ces informations sont-elles organisées et accessibles ? Cet exposé va explorer la relation entre les **sites web**, les **navigateurs web**, et les **moteurs de recherche**, qui ensemble, rendent l'Internet navigable et fonctionnel pour les utilisateurs.</p>
+    </section>
+
+    <section>
+        <h2>I. Les Sites Web</h2>
+        <p>Les sites web sont des plateformes qui contiennent des informations accessibles par Internet. Un site web peut être composé de plusieurs pages liées entre elles par des liens hypertextes. Ces sites sont conçus pour être consultés à l’aide d’un navigateur web.</p>
+        <h3>Types de Sites Web</h3>
+        <p>Les sites web se classent en plusieurs catégories en fonction de leur usage :</p>
+        <ul>
+            <li><strong>Sites informatifs :</strong> Sites comme Wikipédia ou les blogs fournissent des informations sur une variété de sujets.</li>
+            <li><strong>Sites d'e-commerce :</strong> Amazon, AliExpress, et eBay permettent d'acheter des produits en ligne.</li>
+            <li><strong>Réseaux sociaux :</strong> Facebook, Instagram, et Twitter permettent aux utilisateurs de partager du contenu et d'interagir avec d'autres.</li>
+            <li><strong>Sites de vidéos et de streaming :</strong> YouTube, Netflix, et Hulu permettent de visionner des vidéos et des films en ligne.</li>
+        </ul>
+        <a href="https://www.theshortcut.com/p/wikipedia-vector-2022-redesign" target="_blank">
+            <img class="image" src="https://www.theshortcut.com/p/wikipedia-vector-2022-redesign" alt="Image d'un site statique (Wikipedia Redesign)">
+        </a>
+    </section>
+
+    <section>
+        <h2>II. Les Navigateurs Web</h2>
+        <p>Les navigateurs web sont des logiciels qui permettent d'accéder aux sites web. Lorsqu'un utilisateur entre l'adresse d'un site dans la barre d'adresse, le navigateur interprète le code HTML, CSS et JavaScript pour afficher correctement la page.</p>
+        <h3>Fonctionnalités principales des navigateurs</h3>
+        <ul>
+            <li><strong>Navigation par onglets :</strong> Permet d'ouvrir plusieurs pages en même temps dans une seule fenêtre.</li>
+            <li><strong>Gestion des extensions :</strong> Extensions comme les bloqueurs de publicité ou les traducteurs permettent d'améliorer l'expérience de navigation.</li>
+            <li><strong>Historique :</strong> Les navigateurs enregistrent l'historique des sites visités pour un accès rapide.</li>
+        </ul>
+        <a href="https://openclassrooms.com/fr/courses/5870011-naviguez-sur-internet/6006651-accedez-a-un-site-internet" target="_blank">
+            <img class="animation" src="https://openclassrooms.com/fr/courses/5870011-naviguez-sur-internet/6006651-accedez-a-un-site-internet" alt="Capture d’écran interactive d’un navigateur montrant une URL saisie et une page qui se charge.">
+        </a>
+    </section>
+
+    <section>
+        <h2>III. Les Moteurs de Recherche</h2>
+        <h3>Comment fonctionnent les moteurs de recherche ?</h3>
+        <p>Les moteurs de recherche, comme Google, Bing ou DuckDuckGo, indexent le contenu des sites web afin de le rendre accessible à l'utilisateur en fonction des mots-clés saisis dans la barre de recherche. Ce processus comprend :</p>
+        <ul>
+            <li><strong>Exploration (Crawling) :</strong> Les robots des moteurs de recherche parcourent le web pour indexer les pages disponibles.</li>
+            <li><strong>Indexation :</strong> Les pages sont stockées dans une base de données.</li>
+            <li><strong>Classement :</strong> Les résultats sont classés selon leur pertinence, en fonction d'algorithmes complexes.</li>
+        </ul>
+        <img class="image" src="https://www.universalis.fr/typo3temp/assets/_processed_/4/1/csm_de120462_ddd8f729eb.webp" alt="Schéma montrant le flux de fonctionnement d’un moteur de recherche.">
+    </section>
+
+    <section>
+        <h2>IV. Relation entre ces outils</h2>
+        <p>Les sites web, les navigateurs et les moteurs de recherche sont tous interdépendants. Voici comment ils fonctionnent ensemble :</p>
+        <ul>
+            <li>Le **moteur de recherche** aide à trouver un site web en indexant et en classant les pages.</li>
+            <li>Le **navigateur web** permet d'afficher ce site une fois trouvé par le moteur de recherche.</li>
+            <li>L’utilisateur peut alors consulter le contenu du site web, interagir avec lui, et en apprendre davantage.</li>
+        </ul>
+        <img class="timeline" src="https://agence-webast.fr/wp-content/uploads/2022/04/processus-de-crawling-etape-par-etape-e1650362425204-1024x832.png" alt="Ligne du temps montrant le processus de recherche via moteur, affichage sur navigateur, et visite de site.">
+    </section>
+
+    <section>
+        <h2>VII. Conclusion</h2>
+        <p>La relation entre les sites web, les navigateurs et les moteurs de recherche constitue l'écosystème qui permet d'accéder aux informations sur Internet. Chaque outil a un rôle essentiel dans la navigation en ligne, et comprendre leur interaction nous aide à mieux utiliser ces outils au quotidien.</p>
+        <iframe class="animation" width="560" height="315" src="https://www.youtube.com/embed/bM-OxzMdliY?si=KZPJO_diW3U9cRtj" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Amine Antribouzar</p>
+        <p>Merci d'avoir consulté cet exposé. N'hésitez pas à poser vos questions ou à demander plus d'informations !</p>
+    </footer>
+</body>
+</html>
+
